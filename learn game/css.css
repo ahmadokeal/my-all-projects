@@ -1,0 +1,53 @@
+body {
+  height: 100vh;
+  background: whitesmoke;
+  direction: rtl;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-top: 50px;
+}
+
+.genum .content {
+  border-radius: 2rem;
+  height: 300px;
+  width: 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.genum .content .color {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.repo {
+  padding: 12px;
+  border-radius: 0.7rem;
+  border: 2px solid #e91e63;
+  border-bottom-width: 6px;
+  font-size: 22px;
+  margin-top: 0.5rem;
+  background-color: white;
+  margin-bottom: 0.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+/*# sourceMappingURL=css.css.map */

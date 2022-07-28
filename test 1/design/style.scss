@@ -1,0 +1,11 @@
+.box {
+  background-color: #eee;
+  border: 1px solid;
+  color: white;
+  .right {
+    color: var(--bs-success) + 20;
+    i {
+      float: right;
+    }
+  }
+}

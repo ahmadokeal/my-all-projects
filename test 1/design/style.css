@@ -1,0 +1,11 @@
+.box {
+  background-color: #eee;
+  border: 1px solid;
+  color: white;
+}
+.box .right {
+  color: var(--bs-success)20;
+}
+.box .right i {
+  float: right;
+}/*# sourceMappingURL=style.css.map */
