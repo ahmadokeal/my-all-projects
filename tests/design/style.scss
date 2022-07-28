@@ -1,0 +1,74 @@
+.input {
+  border-radius: 0.25rem;
+  border: 3px solid #0fbd7a;
+  max-width: 700px;
+  direction: rtl;
+  span:not(.fileName) {
+    background-color: #0fbd7a;
+    color: white;
+    font-size: 30px;
+    text-transform: capitalize;
+  }
+  .fileName {
+    display: inline-block;
+    width: calc(100% - 175.48px);
+    text-align: center;
+  }
+}
+@font-face {
+  font-family: "Cairo";
+  src: url("../fonts/Cairo/Cairo-VariableFont_wght.ttf") format("woff2");
+}
+body {
+  font-family: "Cairo";
+}
+input {
+  display: none;
+}
+.show {
+  background-color: #eee;
+  border-radius: 0.5rem;
+  padding: 20px;
+}
+.input:nth-child(2) {
+  border-color: #ff0f4b;
+  > span {
+    background-color: #ff0f4b;
+  }
+}
+.display {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > * {
+    flex: 1;
+  }
+}
+.dropBox {
+  border-radius: 0.5rem;
+  border: 1px solid #ddd;
+  > span {
+    border: 5px dashed #6c757d;
+    min-height: 400px;
+    width: 100%;
+    cursor: pointer;
+    justify-content: center;
+  }
+}
+.area {
+  height: 500px;
+  border: 2px solid white;
+  position: relative;
+}
+.ball {
+  -webkit-user-drag: element;
+  border-radius: 50%;
+  background-color: #ff0f4b;
+  width: 50px;
+  height: 50px;
+  cursor: grabbing;
+  position: absolute;
+}
