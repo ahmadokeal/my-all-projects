@@ -1,0 +1,629 @@
+::-webkit-slider-thumb {
+  background-color: #00b4a4;
+  color: #00b4a4;
+  height: 50px;
+}
+
+::-webkit-slider-runnable-track {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+#app input {
+  border-radius: 0.5rem;
+  border: 3px solid #fa4578;
+  font-size: 20px;
+  padding: 5px 15px;
+  min-width: 500px;
+}
+
+#app input:focus {
+  outline: none;
+}
+
+#app button {
+  background-color: #fa4578 !important;
+  text-transform: capitalize;
+  color: white !important;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#app .repo {
+  border-radius: 0.5rem;
+  padding: 10px;
+  border: 2px solid #00b4a4;
+  border-bottom-width: 6px;
+}
+
+#app .repo:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+#app2 .product {
+  background-color: #ff1d5d;
+  border-radius: 0.3rem;
+  padding: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+  text-align: center;
+}
+
+#app2 .product h3 {
+  text-transform: capitalize;
+  font-size: 40px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+#app2 .product p {
+  font-size: 20px;
+  color: #e7e7e7;
+  margin-bottom: 20px;
+}
+
+#app2 .product .price {
+  margin-bottom: 10px;
+}
+
+#app2 .product .price,
+#app2 .product .amount-title {
+  font-weight: 500;
+  display: block;
+}
+
+#app2 .product .amount-title {
+  margin-bottom: 20px;
+}
+
+#app2 .product .total-price {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 500;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#app2 .product .total-price > * {
+  background-color: white;
+  padding: 10px 15px;
+  color: #ff1d5d;
+  border-radius: 0.3rem;
+}
+
+#app3 .set-color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+#app3 .set-color li {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#app3 .set-color li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#app3 .set-color li:nth-child(1) {
+  background-color: #faa800;
+}
+
+#app3 .set-color li:nth-child(2) {
+  background-color: #03ceb3;
+}
+
+#app3 .set-color li:nth-child(3) {
+  background-color: #fa0053;
+}
+
+#app3 .set-color li:nth-child(4) {
+  background-color: #0075fa;
+}
+
+#app3 .set-color li:nth-child(5) {
+  background-color: #861cff;
+}
+
+#app3 .changes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+#app3 .changes div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 200px;
+  padding: 20px;
+  background-color: var(--mainColor);
+}
+
+#app4 form {
+  margin: 20px auto;
+}
+
+#app4 form input {
+  border-radius: 0.5rem;
+  padding: 10px 15px;
+  border: 3px solid #03ceb3;
+  min-width: 300px;
+}
+
+#app4 form input:focus {
+  outline: none;
+}
+
+#app4 form button {
+  background-color: #00b4a4 !important;
+  color: white;
+}
+
+#app4 .result {
+  background-color: #2a2d46;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 0.5rem;
+  margin-bottom: 15px;
+}
+
+#app5 form {
+  margin: 20px auto;
+}
+
+#app5 form input {
+  border: 3px solid #2a2d46;
+  border-bottom-width: 7px;
+  border-radius: 0.5rem;
+  padding: 5px 15px;
+  min-width: 300px;
+}
+
+#app5 form input:focus {
+  outline: none;
+}
+
+#app5 form .btn {
+  background-color: #2a2d46;
+  color: white;
+}
+
+#app5 form .btn:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(42, 45, 70, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(42, 45, 70, 0.5);
+}
+
+#app6 h4 {
+  font-size: 30px;
+  color: #00b4a4;
+}
+
+#app6 textarea {
+  resize: none;
+  width: 400px;
+  height: 200px;
+  font-size: 20px;
+  border-radius: 0.5rem;
+  border: 3px solid #2a3c46;
+  padding: 15px;
+}
+
+#app6 .counter {
+  background-color: #ff1d5d;
+  border-radius: 0.5rem;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+#app6 .counter span.zero {
+  color: #0d1327;
+}
+
+#app7 {
+  background-color: #24273b;
+  min-height: 100vh;
+}
+
+#app7 form {
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+#app7 form input {
+  border: 3px solid #03ceb3;
+  border-bottom-width: 7px;
+  padding: 5px 15px;
+  min-width: 500px;
+  font-size: 20px;
+}
+
+#app7 form input:focus {
+  outline: none;
+}
+
+#app7 form input + button {
+  background-color: #03ceb3;
+  color: white;
+  padding: 7px;
+}
+
+#app7 form input + button:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(0, 180, 164, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(0, 180, 164, 0.5);
+}
+
+#app7 .tasks-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+#app7 .tasks-list .task {
+  text-align: left;
+  padding: 15px;
+  background-color: #2a2d46;
+  color: white;
+  border-radius: 0.5rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-shadow: 0 2px 18px #141622;
+          box-shadow: 0 2px 18px #141622;
+  width: 100%;
+  font-size: 24px;
+  cursor: pointer;
+  position: relative;
+}
+
+#app7 .tasks-list .task.done {
+  text-decoration: line-through;
+}
+
+#app7 .tasks-list .task .del {
+  font-size: 16px !important;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#app8 button {
+  background-color: #fa4578;
+  font-size: 30px;
+  color: white;
+}
+
+#app8 button:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+#app8 button.selected {
+  background-color: #03ceb3;
+}
+
+#app9 {
+  background-color: #24273b;
+  min-height: 100vh;
+}
+
+#app9 .tabs-choose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: auto;
+}
+
+#app9 .tabs-choose li {
+  opacity: 0.3;
+  background-color: #fa4578;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#app9 .tabs-choose li.active {
+  opacity: 1;
+}
+
+#app9 .tabs-content {
+  background-color: #363a5c;
+  text-align: left;
+  border-radius: 0.5rem;
+  padding: 20px;
+  font-size: 40px;
+  -webkit-box-shadow: 0 2px 18px rgba(13, 19, 39, 0.4);
+          box-shadow: 0 2px 18px rgba(13, 19, 39, 0.4);
+  color: white;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+#app11 {
+  background-color: #24273b;
+  min-height: 100vh;
+}
+
+#app11 .grad-box {
+  width: 100vw;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: capitalize;
+  color: white;
+  font-size: 35px;
+}
+
+#app11 form {
+  margin: 20px auto;
+}
+
+#app11 form .form-group {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+}
+
+#app11 form .form-group label {
+  text-transform: capitalize;
+  color: white;
+  font-size: 24px;
+}
+
+#app11 form .form-group input {
+  background-color: #404672;
+  -webkit-box-shadow: 0 2px 18px rgba(13, 19, 39, 0.4);
+          box-shadow: 0 2px 18px rgba(13, 19, 39, 0.4);
+  border-radius: 0.5rem;
+  border: none;
+  min-width: 300px;
+  font-size: 20px;
+  padding: 15px;
+  color: #0d1327;
+}
+
+#app11 .result,
+#app11 .syntax {
+  background-color: var(--bs-info);
+  border-radius: 0.3rem;
+  font-size: 20px;
+  margin-bottom: 15px;
+  padding: 20px;
+  text-align: left;
+}
+
+#app11 .result span,
+#app11 .syntax span {
+  text-transform: capitalize;
+  margin-right: 30px;
+  font-weight: bold;
+}
+
+#app12 {
+  background-color: #24273b;
+  min-height: 100vh;
+}
+
+#app12 form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+}
+
+#app12 form input {
+  background-color: #56596d;
+  border: none;
+  display: block;
+  border-radius: 0.5rem;
+  margin: auto;
+  color: white;
+  font-size: 20px;
+  min-width: 300px;
+  padding: 10px 15px;
+  -webkit-box-shadow: 0 2px 15px rgba(13, 19, 39, 0.5);
+          box-shadow: 0 2px 15px rgba(13, 19, 39, 0.5);
+  margin-bottom: 15px;
+}
+
+#app12 form input:focus {
+  outline: none;
+}
+
+#app12 form input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#app12 form input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#app12 form input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#app12 form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#app12 form button {
+  background-color: #03ceb3;
+  text-transform: capitalize;
+}
+
+#app12 form button:disabled {
+  opacity: 0.5;
+}
+
+#app13 form {
+  margin: 20px auto;
+  color: white;
+  padding: 20px;
+}
+
+#app13 form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#app13 form .form-group label {
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+#app13 form .form-group input[type="text"],
+#app13 form .form-group textarea {
+  background-color: #2a2d46;
+  border-radius: 0.5rem;
+  border: 5px solid #00b4a4;
+  min-width: 500px;
+  padding: 15px;
+  font-size: 20px;
+  color: white;
+}
+
+#app13 form .form-group input[type="text"]:focus,
+#app13 form .form-group textarea:focus {
+  outline: none;
+}
+
+#app13 form .form-group textarea {
+  height: 300px;
+  resize: none;
+}
+
+#app13 form .form-group input[type="submit"] {
+  background-color: #00b4a4;
+  border-radius: 0.5rem;
+  padding: 10px 15px;
+  text-transform: capitalize;
+  width: 300px;
+  font-size: 24px;
+  color: white;
+  border: none;
+  outline: none !important;
+}
+/*# sourceMappingURL=main.css.map */

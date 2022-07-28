@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>learn vue js</title>
+  </head>
+  <body style="font-family: 'Arial'">
+    <div id="app">
+      <h1 v-if="name">welcome {{ `Mr ${name}` }}</h1>
+      <p v-else>unknown</p>
+      <h1 v-if="age > 50">you old</h1>
+      <h1 v-else-if="age > 15 && age < 40">you young</h1>
+      <h1 v-else>you kid</h1>
+      <h2>{{ myName() }}</h2>
+      <h2 v-text="name ? 'name is set' : 'not set'"></h2>
+      <h2 v-Html="title"></h2>
+      <ul>
+        <!-- <li v-for="skill in skills">{{ skill }}</li> -->
+        <li v-for="(skill, i) in skills">{{i + 1}} => {{skill}}</li>
+      </ul>
+      <ul>
+        <li v-for="(test, i) in tests">
+          {{i + 1}}- {{test.theTest}} => {{test.prog}}
+        </li>
+      </ul>
+      <p v-once>{{ name }}</p>
+      <p v-show="name">welcome {{name}}</p>
+      <a :href="link">
+        <img :src="src" :alt="alt" />
+      </a>
+      <p>{{counter}}</p>
+      <button @click.middle="counter += 10">update</button>
+      <form action="">
+        <input type="text" v-model="name" />
+        <p>your name is {{ name }}</p>
+      </form>
+      <app-article
+        v-for="post in posts"
+        :title="post.title"
+        :auther="post.auther"
+      ></app-article>
+      <app-local
+        v-for="post in posts"
+        :title="post.title"
+        :auther="post.auther"
+      ></app-local>
+      <input v-model="age" type="number" />
+      <p>{{reverseTxt}}</p>
+      <p>{{reverseTxt}}</p>
+      <p>{{reverseTxt}}</p>
+      <p>{{reverseTxt}}</p>
+      <p>{{reverseTxt}}</p>
+      <label>search for lang</label>
+      <input type="text" v-model="findLang" />
+      <ul>
+        <li v-for="lang in filterLangs">{{lang}}</li>
+      </ul>
+      <h1>that is by <span style="color: #00e6d5">Computed</span></h1>
+      <label>write user name</label>
+      <input type="text" v-model="userName" />
+      <p>{{V_U_N}}</p>
+      <h1>that is by <span style="color: #ff436c">Method</span></h1>
+      <label>write user name</label>
+      <input type="text" v-model="userName2" />
+      <p>{{V_U_N_M()}}</p>
+      <label>pound Egyption</label>
+      <input type="text" v-model="eg" />
+      <label>dollar USA</label>
+      <input type="text" v-model="usa" />
+      <input type="text" v-model="hour" placeholder="hours" />
+      <input type="text" v-model="minutes" placeholder="minutes" />
+      <input type="text" v-model="seconds" placeholder="seconds" />
+    </div>
+    <script src="js/vue.js"></script>
+    <!-- <script src="js/js.js"></script> -->
+    <script>
+      Vue.component("app-article", {
+        data: function () {
+          return {
+            name: "okeal",
+            count: 0,
+          };
+        },
+        props: ["auther", "title"],
+        template: "<p>article title is {{title}} and Writen by {{auther}}</p>",
+      });
+      let AppLocal = {
+        data: function () {
+          return {
+            name: "okeal",
+            count: 0,
+          };
+        },
+        props: ["auther", "title"],
+        template:
+          "<p>article title is {{title}} and Writen by {{auther}} this component is (Local)</p>",
+      };
+      let vm = new Vue({
+        el: "#app",
+        data: {
+          name: "ahmad",
+          title: "<b class='vue5'>te1st</b>",
+          skills: [
+            "html",
+            "js",
+            "css",
+            "sass",
+            "json",
+            "ajax",
+            "gulp.js",
+            "vue.js",
+            "pug.js",
+            "jquery",
+          ],
+          findLang: "",
+          langs: [
+            "html",
+            "js",
+            "css",
+            "sass",
+            "json",
+            "ajax",
+            "gulp.js",
+            "vue.js",
+            "pug.js",
+            "jquery",
+            "c#",
+            "java",
+            "go",
+            "php",
+            "babel",
+            "Mysql",
+            "Pythone",
+            "scss",
+          ],
+          source: "Pal",
+          url: "https://ahmadokeal.github.io/project-game",
+          age: 15,
+          posts: [
+            { id: 1, auther: "ahmad", title: "memory game" },
+            { id: 2, auther: "okeal", title: "what's Json" },
+            { id: 3, auther: "amean", title: "feature of technology" },
+          ],
+          tests: [
+            {
+              theTest: "html",
+              prog: 70,
+            },
+            {
+              theTest: "js",
+              prog: 50,
+            },
+            {
+              theTest: "ajax",
+              prog: 90,
+            },
+          ],
+          counter: 0,
+          src: "galary_1.png",
+          alt: "alter",
+          link: "https:\/\/ahmadokeal.github.io\/pal",
+          userName: "",
+          userName2: "",
+          eg: 0,
+          usa: 0,
+          hour: 0,
+          minutes: 0,
+          seconds: 0,
+        },
+        methods: {
+          myName() {
+            return this.name;
+          },
+          V_U_N_M: function () {
+            if (!this.userName2) {
+              return "username can't be Empty";
+            } else if (this.userName2.length < 5) {
+              return "username is short";
+            } else if (!isNaN(this.userName2)) {
+              return "username can't is only numders";
+            } else {
+              return `Hello ${this.userName2}`;
+            }
+          },
+        },
+        computed: {
+          reverseTxt: function () {
+            console.log("Run");
+            return this.name.split("").reverse().join("");
+          },
+          filterLangs: function () {
+            let filtering = new RegExp(this.findLang, "i");
+            return this.langs.filter((el) => {
+              return el.match(filtering);
+            });
+          },
+          V_U_N: function () {
+            if (!this.userName) {
+              return "username can't be Empty";
+            } else if (this.userName.length < 5) {
+              return "username is short";
+            } else if (!isNaN(this.userName)) {
+              return "username can't is only numders";
+            } else {
+              return `Hello ${this.userName}`;
+            }
+          },
+        },
+        watch: {
+          // watch = يراقب التغيرات
+          eg: function (v) {
+            this.usa = v / 16;
+          },
+          usa: function (v) {
+            this.eg = v * 16;
+          },
+          hour: function (v) {
+            this.minutes = v * 60;
+          },
+          minutes: function (v) {
+            this.hour = v / 60;
+            this.seconds = v * 60;
+          },
+          seconds: function (v) {
+            this.minutes = v / 60;
+            // this.hour = v * 60 * 60;
+          },
+        },
+        components: {
+          "app-local": AppLocal,
+        },
+      });
+    </script>
+  </body>
+</html>
